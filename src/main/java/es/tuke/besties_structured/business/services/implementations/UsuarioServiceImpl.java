@@ -21,10 +21,6 @@ public class UsuarioServiceImpl implements IUsuarioService{
     @Autowired
     UsuarioRepository repository;
 
-    @Autowired
-    FileSystemStorageService storageService;
-
-
     @Override
     public List<UsuarioEntity> findAllEmployeers() {
         return repository.findAll();
